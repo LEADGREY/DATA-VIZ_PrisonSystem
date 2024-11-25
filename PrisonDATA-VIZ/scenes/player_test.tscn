@@ -94,6 +94,6 @@ animation = &"idle"
 autoplay = "idle"
 frame_progress = 0.622895
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="player" type="CollisionShape2D" parent="."]
 position = Vector2(0, -22)
 shape = SubResource("RectangleShape2D_c48u7")

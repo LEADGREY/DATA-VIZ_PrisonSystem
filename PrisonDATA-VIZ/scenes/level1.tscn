@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://bmul6gare3yxr"]
+[gd_scene load_steps=26 format=3 uid="uid://bmul6gare3yxr"]
 
 [ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_nl1fl"]
 [ext_resource type="PackedScene" uid="uid://cyst85fsck5xa" path="res://scenes/player_test.tscn" id="1_rhjrj"]
@@ -13,9 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://bwi6hk72v385l" path="res://asset/rooms/room1.png" id="9_cdvw0"]
 [ext_resource type="FontFile" uid="uid://cghgc7rm1slap" path="res://asset/brackeys_platformer_assets/brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf" id="9_rshpf"]
 [ext_resource type="Texture2D" uid="uid://bf2gujoi3fwes" path="res://asset/rooms/room2.png" id="10_1rjyn"]
-[ext_resource type="PackedScene" uid="uid://1cw323sugap6" path="res://scenes/rooms/room1.tscn" id="11_tfoku"]
-[ext_resource type="PackedScene" uid="uid://duqrvjc53c51t" path="res://scenes/rooms/room2.tscn" id="13_vjefv"]
-[ext_resource type="PackedScene" uid="uid://cuo03iu6k7a08" path="res://scenes/rooms/room3.tscn" id="15_o7jla"]
+[ext_resource type="PackedScene" uid="uid://qsao0rr5lv8s" path="res://scenes/diaBox/box1.tscn" id="14_8eiw2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7tu4v"]
 texture = ExtResource("2_m61h0")
@@ -949,11 +947,10 @@ shape = SubResource("WorldBoundaryShape2D_gjaig")
 
 [node name="room section1" type="Node" parent="."]
 
-[node name="room1" parent="room section1" instance=ExtResource("11_tfoku")]
-position = Vector2(121, -71)
+[node name="texts" type="Node" parent="."]
 
-[node name="room2" parent="room section1" instance=ExtResource("13_vjefv")]
-position = Vector2(280, -72)
+[node name="Node" type="Node" parent="."]
 
-[node name="room3" parent="room section1" instance=ExtResource("15_o7jla")]
-position = Vector2(442, -71)
+[node name="box" parent="Node" instance=ExtResource("14_8eiw2")]
+position = Vector2(220, 39)
+scale = Vector2(0.258979, 0.258979)
