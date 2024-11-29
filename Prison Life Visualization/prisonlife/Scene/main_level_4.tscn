@@ -878,9 +878,9 @@ scale = Vector2(0.84944, 0.610442)
 position = Vector2(320, 361)
 scale = Vector2(0.84944, 0.690442)
 
-[node name="previous" parent="." instance=ExtResource("14_jeo7u")]
-position = Vector2(25, 563)
-previousLevel = ExtResource("15_q3m4s")
+; [node name="previous" parent="." instance=ExtResource("14_jeo7u")]
+; position = Vector2(25, 563)
+; previousLevel = ExtResource("15_q3m4s")
 
 [node name="end" type="Label" parent="."]
 offset_left = 377.0
